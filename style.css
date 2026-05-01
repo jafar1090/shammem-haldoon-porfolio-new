@@ -501,10 +501,10 @@ section {
 }
 
 .mosaic-tile:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 30px 60px rgba(0, 99, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 99, 255, 0.1);
     z-index: 10;
-    background: rgba(255, 255, 255, 0.1); /* Slightly more opaque on hover */
+    background: rgba(255, 255, 255, 0.08);
 }
 
 /* Hover Background Images */
@@ -515,19 +515,20 @@ section {
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: var(--transition);
-    z-index: 0;
+    transition: opacity 0.4s ease;
+    z-index: 1;
     pointer-events: none;
+    border-radius: 24px;
 }
 
 .mosaic-tile:hover::after {
-    opacity: 0.4;
+    opacity: 0.45;
 }
 
 /* Ensure content stays above the background image */
-.mosaic-tile > * {
+.mosaic-tile>* {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hover-bg-1::after {
@@ -581,8 +582,8 @@ section {
 .mosaic-tile:hover .role-icon {
     background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
     color: white;
-    transform: scale(1.1) rotate(8deg);
-    box-shadow: 0 8px 20px rgba(0, 153, 255, 0.25);
+    transform: scale(1.05) rotate(3deg);
+    box-shadow: 0 4px 12px rgba(0, 153, 255, 0.15);
 }
 
 .experience-header {

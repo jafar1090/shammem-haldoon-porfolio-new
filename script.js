@@ -141,27 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 8. 3D Tilt Effect for Mosaic Tiles
-    const mosaicTiles = document.querySelectorAll('.mosaic-tile');
-    mosaicTiles.forEach(tile => {
-        tile.addEventListener('mousemove', (e) => {
-            const rect = tile.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            
-            const rotateX = (y - centerY) / 20;
-            const rotateY = (centerX - x) / 20;
-            
-            tile.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02) translateY(-8px)`;
-        });
-        
-        tile.addEventListener('mouseleave', () => {
-            tile.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1) translateY(0)`;
-        });
-    });
+
 
     // 9. Adaptive Immersive UX (Contact Section)
     const contactTitle = document.querySelector('.contact-title');
