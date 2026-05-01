@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shameem Haldoon P | Portfolio</title>
-    <meta name="description" content="Professional portfolio of Shameem Haldoon P, CEO at TOMERCON DEVELOPERS. Showcasing experience, leadership, and projects like the YUVA volunteer management app.">
+    <meta name="description"
+        content="Professional portfolio of Shameem Haldoon P, CEO at TOMERCON DEVELOPERS. Showcasing experience, leadership, and projects like the YUVA volunteer management app.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Background Elements -->
+    <div class="mouse-glow" id="mouse-glow"></div>
     <div class="bg-gradient-1"></div>
     <div class="bg-gradient-2"></div>
 
@@ -42,7 +48,10 @@
             <div class="hero-content reveal">
                 <p class="greeting">Hello, I'm</p>
                 <h1 class="title">Shameem Haldoon P</h1>
-                <h2 class="subtitle">Chief Executive Officer at <span class="accent">TOMERCON DEVELOPERS</span></h2>
+                <h2 class="subtitle">
+                    <span class="typewriter" data-words='["Chief Executive Officer", "Entrepreneur", "Visionary Leader", "Mechanical Engineer"]'></span>
+                    at <span class="accent">TOMERCON DEVELOPERS</span>
+                </h2>
                 <p class="location"><i class="fas fa-map-marker-alt"></i> Kozhikode, Kerala, India</p>
                 <div class="cta-group">
                     <a href="#contact" class="btn btn-primary">Get in Touch</a>
@@ -59,20 +68,30 @@
     <section id="about" class="about-section">
         <div class="container">
             <h2 class="section-title reveal">About <span class="accent">Me</span></h2>
-            <div class="about-content">
-                <div class="about-text reveal">
-                    <p>I am an entrepreneurial leader and engineering graduate with a passion for building impactful solutions. With a B.Tech in Mechanical Engineering from Government Engineering College Kozhikode (2018–2023), I transitioned my problem-solving skills into technology and business management.</p>
-                    <p>My journey spans from engineering to leading as the Chief Executive Officer at TOMERCON DEVELOPERS. I thrive at the intersection of innovative software development and strategic business growth.</p>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <h3 class="stat-num">5+</h3>
-                            <p class="stat-text">Years of Engineering & Leadership</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3 class="stat-num">4</h3>
-                            <p class="stat-text">Business Ventures</p>
-                        </div>
+            <div class="about-grid">
+                <div class="insight-card reveal">
+                    <div class="insight-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>The Foundation</h3>
                     </div>
+                    <p>B.Tech in Mechanical Engineering from Government Engineering College Kozhikode (2018–2023). I transitioned my complex problem-solving skills into the world of technology and leadership.</p>
+                </div>
+                <div class="insight-card reveal delay-1">
+                    <div class="insight-header">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>The Vision</h3>
+                    </div>
+                    <p>Leading as the Chief Executive Officer at TOMERCON DEVELOPERS. I thrive at the intersection of innovative software development and strategic business growth.</p>
+                </div>
+            </div>
+            <div class="stats reveal delay-2">
+                <div class="stat-item">
+                    <h3 class="stat-num">5+</h3>
+                    <p class="stat-text">Years of Leadership</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-num">4</h3>
+                    <p class="stat-text">Business Ventures</p>
                 </div>
             </div>
         </div>
@@ -82,77 +101,87 @@
     <section id="experience" class="experience-section">
         <div class="container">
             <h2 class="section-title reveal">Professional <span class="accent">Experience</span></h2>
-            <div class="timeline">
+            <div class="experience-mosaic">
                 
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <h3>Founder and CEO</h3>
-                        <h4>Learnyor Private Limited</h4>
-                        <span class="timeline-date">Nov 2025 - Present</span>
-                        <p>Kozhikode, Kerala, India</p>
+                <!-- Learnyor -->
+                <div class="mosaic-tile tile-wide reveal hover-bg-1">
+                    <div class="experience-header">
+                        <div class="role-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="exp-title-group">
+                            <h3>Founder and CEO</h3>
+                            <h4>Learnyor Private Limited</h4>
+                        </div>
+                        <span class="exp-date">Nov 2025 - Present</span>
+                    </div>
+                    <p class="exp-location">Kozhikode, Kerala, India</p>
+                </div>
+
+                <!-- TOMERCON ADS -->
+                <div class="mosaic-tile tile-standard reveal hover-bg-2">
+                    <div class="experience-header">
+                        <div class="role-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="exp-title-group">
+                            <h3>Co-Founder</h3>
+                            <h4>TOMERCON ADS</h4>
+                        </div>
+                        <span class="exp-date">Jan 2024 - Present</span>
                     </div>
                 </div>
 
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <h3>Founder</h3>
-                        <h4>TOMERCON FUSION LABS LLP (TFL)</h4>
-                        <span class="timeline-date">Apr 2025 - Present</span>
-                        <p>Kozhikode, Kerala, India</p>
+                <!-- TOMERCON Developers -->
+                <div class="mosaic-tile tile-large reveal hover-bg-3">
+                    <div class="experience-header">
+                        <div class="role-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="exp-title-group">
+                            <h3>Chief Executive Officer</h3>
+                            <h4>TOMERCON DEVELOPERS</h4>
+                        </div>
+                        <span class="exp-date">Jan 2019 - Present</span>
+                    </div>
+                    <p class="exp-location">Kozhikode, Kerala, India</p>
+                    <p class="exp-desc">Leading strategic growth and software innovation across multiple business verticals.</p>
+                </div>
+
+                <!-- TOMERCON Fusion Labs -->
+                <div class="mosaic-tile tile-standard reveal hover-bg-1">
+                    <div class="experience-header">
+                        <div class="role-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="exp-title-group">
+                            <h3>Founder</h3>
+                            <h4>TOMERCON FUSION LABS LLP</h4>
+                        </div>
+                        <span class="exp-date">Apr 2025 - Present</span>
                     </div>
                 </div>
 
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <h3>Co-Founder</h3>
-                        <h4>FGT STUDIOS LLP.</h4>
-                        <span class="timeline-date">Mar 2024 - Present</span>
-                        <p>Kozhikode, Kerala, India</p>
+                <!-- FGT Studios -->
+                <div class="mosaic-tile tile-standard reveal hover-bg-2">
+                    <div class="experience-header">
+                        <div class="role-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="exp-title-group">
+                            <h3>Co-Founder</h3>
+                            <h4>FGT STUDIOS LLP.</h4>
+                        </div>
+                        <span class="exp-date">Mar 2024 - Present</span>
                     </div>
                 </div>
 
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <h3>Company Owner</h3>
-                        <h4>TOMERCON CONSULTANCY</h4>
-                        <span class="timeline-date">Jan 2024 - Present</span>
-                        <p>Kozhikode, Kerala, India</p>
+                <!-- EDU-REVO -->
+                <div class="mosaic-tile tile-wide reveal hover-bg-3">
+                    <div class="experience-header">
+                        <div class="role-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="exp-title-group">
+                            <h3>Founder</h3>
+                            <h4>EDU-REVO</h4>
+                        </div>
+                        <span class="exp-date">Aug 2023 - Present</span>
                     </div>
+                    <p class="exp-location">Kozhikode, Kerala, India</p>
                 </div>
 
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <h3>Co-Founder</h3>
-                        <h4>TOMERCON ADS</h4>
-                        <span class="timeline-date">Jan 2024 - Present</span>
-                        <p>Kozhikode, Kerala, India</p>
-                    </div>
-                </div>
+                <!-- TOMERCON Consultancy -->
+            
 
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <h3>Founder</h3>
-                        <h4>EDU-REVO</h4>
-                        <span class="timeline-date">Aug 2023 - Present</span>
-                        <p>Kozhikode, Kerala, India</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <h3>Chief Executive Officer</h3>
-                        <h4>TOMERCON DEVELOPERS</h4>
-                        <span class="timeline-date">Jan 2019 - Present</span>
-                        <p>Kozhikode, Kerala, India</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -161,27 +190,63 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
+        <!-- Background Blobs -->
+        <div class="contact-blobs">
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+        </div>
+
         <div class="container">
-            <div class="contact-card glass-card reveal">
-                <h2>Let's Connect</h2>
-                <p>I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+            <div class="compact-contact-bar glass-card reveal">
                 <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Kozhikode, Kerala, India</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fab fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/shameem-haldoon-p-38a71220a/" target="_blank">LinkedIn Profile</a>
-                    </div>
+                    <h3 class="contact-title" data-original="Let's <span class='accent'>Connect</span>">Let's <span class="accent">Connect</span></h3>
+                    <p class="contact-desc" data-original="Ready to build something amazing together?">Ready to build something amazing together?</p>
                 </div>
-                <a href="mailto:contact@tomercon.com" class="btn btn-primary">Say Hello</a>
+                <div class="contact-actions">
+                    <a href="mailto:contact@tomercon.com" class="icon-btn copy-email" 
+                       data-email="contact@tomercon.com" 
+                       data-title="Drop me a message" 
+                       data-desc="I usually respond within 24 hours." 
+                       data-color="#0099ff"
+                       aria-label="Email Me">
+                        <i class="fas fa-envelope"></i>
+                        <span class="tooltip">Copy & Open Mail</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shameem-haldoon-p-38a71220a/" target="_blank" class="icon-btn" 
+                       data-title="Let's network" 
+                       data-desc="Connect with me for professional updates." 
+                       data-color="#0077b5"
+                       aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="tooltip">LinkedIn</span>
+                    </a>
+                    <a href="#" class="icon-btn" 
+                       data-title="Say hi on Twitter" 
+                       data-desc="Catch my latest thoughts and updates." 
+                       data-color="#1da1f2"
+                       aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span class="tooltip">Twitter</span>
+                    </a>
+                    <a href="https://www.google.com/maps/place/Kozhikode,+Kerala/" target="_blank" class="icon-btn" 
+                       data-title="Based in Kerala" 
+                       data-desc="Always open for local meetups in Kozhikode." 
+                       data-color="#ff4b2b"
+                       aria-label="Location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="tooltip">View on Maps</span>
+                    </a>
+                </div>
             </div>
         </div>
+        <div id="copy-toast" class="toast">Email Copied & Opening App...</div>
     </section>
 
     <!-- Footer -->
-    <footer>
+
+
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Shameem Haldoon P. All rights reserved.</p>
         </div>
@@ -190,4 +255,5 @@
     <!-- Scripts -->
     <script src="script.js"></script>
 </body>
+
 </html>
